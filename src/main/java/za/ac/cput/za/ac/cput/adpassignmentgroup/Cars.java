@@ -11,6 +11,43 @@ public class Cars {
     private String make;
     private int yearModel;
     private double price;
+    //Getters
+    public String getMake()
+    {
+        return make;
+    }
+    public int getYearModel()
+    {
+        return yearModel;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+
+    //Setters
+    public void set(String m, int yM, double p)
+    {
+        make = m;
+        yearModel = yM;
+        price = p;
+
+    }
+    public void setMake(String m)
+    {
+        make = m;
+    }
+    public void setYearModel(int yM)
+    {
+        yearModel = yM;
+    }
+    public void setPrice(double p)
+    {
+        price = p;
+    }
+
+
+
 
 
 
