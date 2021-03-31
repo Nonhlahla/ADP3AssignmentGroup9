@@ -11,51 +11,38 @@ public class Cars {
     private String make;
     private int yearModel;
     private double price;
-    //Getters
-    public String getMake()
-    {
+
+
+    public String getMake() {
         return make;
     }
-    public int getYearModel()
-    {
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public int getYearModel() {
         return yearModel;
     }
-    public double getPrice()
-    {
+
+    public void setYearModel(int yearModel) {
+        this.yearModel = yearModel;
+    }
+
+    public double getPrice() {
         return price;
     }
 
-    //Setters
-    public void set(String m, int yM, double p)
-    {
-        make = m;
-        yearModel = yM;
-        price = p;
-
-    }
-    public void setMake(String m)
-    {
-        make = m;
-    }
-    public void setYearModel(int yM)
-    {
-        yearModel = yM;
-    }
-    public void setPrice(double p)
-    {
-        price = p;
-    }
-    //show
-    public void show()
-
-    {
-        System.out.println("Make: " + make);
-        System.out.println("Year Model: " + yearModel);
-        System.out.printf("Price: R%.2f\n", price );
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-
-
-
-
+    @Override
+    public java.lang.String toString() {
+        return "Cars{" +
+                "make='" + make + '\'' +
+                ", yearModel=" + yearModel +
+                ", price=" + price +
+                '}';
+    }
 }
