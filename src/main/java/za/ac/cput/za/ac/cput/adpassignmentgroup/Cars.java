@@ -45,7 +45,14 @@ public class Cars {
     {
         price = p;
     }
+    //show
+    public void show()
 
+    {
+        System.out.println("Make: " + make);
+        System.out.println("Year Model: " + yearModel);
+        System.out.printf("Price: R%.2f\n", price );
+    }
 
 
 
