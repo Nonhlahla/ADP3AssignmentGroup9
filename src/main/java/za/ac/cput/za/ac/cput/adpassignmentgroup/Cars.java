@@ -7,6 +7,11 @@ package za.ac.cput.za.ac.cput.adpassignmentgroup;
  * 31 March 2021
  */
 public class Cars {
+    //Atributes
+    private String make;
+    private int yearModel;
+    private double price;
 
-    }
+
+
 }
