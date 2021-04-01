@@ -12,6 +12,12 @@ public class Cars {
     private int yearModel;
     private double price;
 
+    public Cars(String make,int yearModel,double price) {
+        this.make = make;
+        this.yearModel = yearModel;
+        this.price = price;
+    }
+
 
     public String getMake() {
         return make;
@@ -29,11 +35,17 @@ public class Cars {
         this.yearModel = yearModel;
     }
 
-    public double getPrice() {
+    public  double getPrice() {
         return price;
     }
 
     public void setPrice(double price) {
+
+    }
+    public void set(String make,int yearModel,double price)
+    {
+        this.make = make;
+        this.yearModel = yearModel;
         this.price = price;
     }
 
@@ -45,4 +57,6 @@ public class Cars {
                 ", price=" + price +
                 '}';
     }
+
+
 }
